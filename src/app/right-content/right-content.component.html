@@ -1,0 +1,8 @@
+<div class="w-100 h-100">
+    <ng-container *ngIf="component === 'login'; else elseTemplate">
+        <app-login></app-login>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <app-signup></app-signup>
+    </ng-template>
+</div>

@@ -1,0 +1,12 @@
+<div class="w-100 h-100" appBackgroundColor>
+    <form action="" class="d-flex justify-content-center align-items-center flex-column h-100 w-100"
+        [formGroup]="loginForm" (ngSubmit)="checkUserData()">
+        <div class="w-25 rounded d-flex justify-content-center bgprimary p-3 mb-5 lfont text-white"
+            style="box-shadow: 0 0 5px 5px;">{{ role }}</div>
+        <input class="w-75 p-2 my-4 rounded" type="text" placeholder="Username" formControlName="userName">
+        <input class="w-75 p-2 my-4 rounded" type="password" name="" id="" placeholder="Password"
+            formControlName="password">
+        <button class="w-25 p-2 my-3 rounded bg-success" [disabled]="loginForm.invalid">Log In</button>
+        <button class="w-25 p-2 my-3 rounded bg-danger">Forget Password</button>
+    </form>
+</div>
